@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Digit Tech Group" }],
   icons: {
-    icon: "/logo.png",
+    icon: "/logo.svg",
   },
   openGraph: {
     title: "Digit Tech Group | Chaque création part d'une vision",

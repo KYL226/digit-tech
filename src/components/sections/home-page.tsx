@@ -16,7 +16,7 @@ function HeroSection() {
           className="absolute inset-0 opacity-[0.04]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(28,169,201,1) 1px, transparent 1px), linear-gradient(90deg, rgba(28,169,201,1) 1px, transparent 1px)",
+              "linear-gradient(rgba(90,27,179,1) 1px, transparent 1px), linear-gradient(90deg, rgba(90,27,179,1) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
@@ -28,9 +28,9 @@ function HeroSection() {
             <Badge
               className="px-4 py-2 text-sm font-semibold"
               style={{
-                border: "1px solid rgba(28,169,201,0.4)",
-                background: "rgba(28,169,201,0.08)",
-                color: "#1CA9C9",
+                border: "1px solid rgba(90,27,179,0.4)",
+                background: "rgba(90,27,179,0.08)",
+                color: "#5a1bb3",
               }}
             >
               <Sparkles className="mr-2 h-4 w-4" />
@@ -42,7 +42,7 @@ function HeroSection() {
             <span
               className="animate-hero-gradient bg-clip-text text-transparent"
               style={{
-                backgroundImage: "linear-gradient(135deg, #1CA9C9 0%, #0e7fa0 50%, #1CA9C9 100%)",
+                backgroundImage: "linear-gradient(135deg, #5a1bb3 0%, #45108a 50%, #5a1bb3 100%)",
                 backgroundSize: "200% auto",
               }}
             >
@@ -64,8 +64,8 @@ function HeroSection() {
               href="/contact"
               className="group relative inline-flex h-11 w-full items-center justify-center overflow-hidden rounded-xl px-6 text-sm font-semibold text-white sm:h-12 sm:w-auto sm:px-8 sm:text-base"
               style={{
-                background: "linear-gradient(135deg, #1CA9C9, #0e7fa0)",
-                boxShadow: "0 4px 20px rgba(28,169,201,0.35)",
+                background: "linear-gradient(135deg, #5a1bb3, #45108a)",
+                boxShadow: "0 4px 20px rgba(90,27,179,0.35)",
               }}
             >
               Obtenir un devis

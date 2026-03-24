@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import {
   Facebook,
@@ -21,10 +22,15 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="space-y-6 lg:col-span-4">
             <div>
-              <Link href="/" className="group">
-                <h3 className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-2xl font-bold text-transparent transition-all group-hover:from-primary/80 group-hover:to-primary sm:text-3xl">
-                  Digit Tech Group
-                </h3>
+              <Link href="/" className="group block">
+                <div className="relative h-16 w-36">
+                  <Image
+                    src="/logo.svg"
+                    alt="Digit Tech Group"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
                 <p className="mt-1 text-sm italic text-muted-foreground">Avec Digit Tech Group, chaque création part d&apos;une vision.</p>
               </Link>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -103,7 +109,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
-          <p className="text-sm text-muted-foreground">© 2026 Digit Tech Group. Tous droits réservés.</p>
+          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Digit Tech Group. Tous droits réservés.</p>
           <div className="flex gap-6">
             <button className="text-sm text-muted-foreground transition-colors hover:text-primary">Mentions légales</button>
             <button className="text-sm text-muted-foreground transition-colors hover:text-primary">Politique de confidentialité</button>

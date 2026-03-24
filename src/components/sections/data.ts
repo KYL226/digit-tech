@@ -167,9 +167,9 @@ export const faqData: FAQItem[] = [
   {
     question: "Où êtes-vous situés physiquement ?",
     answer:
-      "Notre bureau principal se trouve à Douala, Cameroun : Cité des Palmiers, près du Collège Dauphine, Immeuble Jaune – 2ᵉ étage – Bureau B09. Nous travaillons également à distance avec des clients internationaux.",
+      "Notre bureau principal se trouve à Koudougou, Burkina Faso : Derrière la Cité FasoTex et en centre ville juste à côté du la place des nations de koudougou. Nous travaillons également à distance avec des clients internationaux.",
     category: "Général",
-    tags: ["Localisation", "Douala", "Cameroun"],
+    tags: ["Localisation", "Koudougou", "Burkina Faso"],
   },
   {
     question: "Comment se déroule l'accompagnement de projet ?",
