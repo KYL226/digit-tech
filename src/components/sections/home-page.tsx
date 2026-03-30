@@ -72,7 +72,7 @@ function HeroSection() {
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" />
             </Link>
 
-            <Link href="/contact" className="inline-flex h-11 w-full items-center justify-center rounded-xl border border-border px-6 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary sm:h-12 sm:w-auto sm:px-8 sm:text-base">
+            <Link href="https://calendly.com/digittechgroup/30min" className="inline-flex h-11 w-full items-center justify-center rounded-xl border border-border px-6 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary sm:h-12 sm:w-auto sm:px-8 sm:text-base">
               Planifier un appel
             </Link>
 

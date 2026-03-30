@@ -53,8 +53,8 @@ export function ServicesPage() {
         <section className="border-y border-border/50 bg-muted/30 py-16">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
-              <div className="rounded-2xl border-2 border-border bg-card p-6 transition-all duration-300 hover:border-primary/50"><Users className="mb-3 h-8 w-8 text-primary" /><div className="mb-1 text-3xl font-bold">1000+</div><div className="text-sm text-muted-foreground">Clients satisfaits</div></div>
-              <div className="rounded-2xl border-2 border-border bg-card p-6 transition-all duration-300 hover:border-primary/50"><Globe className="mb-3 h-8 w-8 text-primary" /><div className="mb-1 text-3xl font-bold">4</div><div className="text-sm text-muted-foreground">Pays d&apos;expertise</div></div>
+              <div className="rounded-2xl border-2 border-border bg-card p-6 transition-all duration-300 hover:border-primary/50"><Users className="mb-3 h-8 w-8 text-primary" /><div className="mb-1 text-3xl font-bold">10+</div><div className="text-sm text-muted-foreground">Clients satisfaits</div></div>
+              <div className="rounded-2xl border-2 border-border bg-card p-6 transition-all duration-300 hover:border-primary/50"><Globe className="mb-3 h-8 w-8 text-primary" /><div className="mb-1 text-3xl font-bold">1</div><div className="text-sm text-muted-foreground">Pays d&apos;expertise</div></div>
               <div className="rounded-2xl border-2 border-border bg-card p-6 transition-all duration-300 hover:border-primary/50"><Award className="mb-3 h-8 w-8 text-primary" /><div className="mb-1 text-3xl font-bold">98%</div><div className="text-sm text-muted-foreground">Taux de satisfaction</div></div>
               <div className="rounded-2xl border-2 border-border bg-card p-6 transition-all duration-300 hover:border-primary/50"><TrendingUp className="mb-3 h-8 w-8 text-primary" /><div className="mb-1 text-3xl font-bold">24/7</div><div className="text-sm text-muted-foreground">Support disponible</div></div>
             </div>

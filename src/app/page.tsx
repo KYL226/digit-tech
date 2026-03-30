@@ -14,16 +14,16 @@ export default function Page() {
     name: "Digit Tech Group",
     url: "https://digittechgroup.com",
     slogan: "Avec Digit Tech Group, chaque création part d'une vision.",
-    email: "servicesclients@absolutesarl.com",
-    telephone: "+237699992818",
+    email: "digittechgroup@gmail.com",
+    telephone: "+22677710804",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Douala",
-      addressCountry: "CM",
+      addressLocality: "Koudougou",
+      addressCountry: "Burkina Faso",
     },
     sameAs: [
-      "https://www.facebook.com/profile.php?id=61586028021180",
-      "https://www.linkedin.com/company/absolute-sarl/",
+      "https://www.facebook.com/profile.php?id=61577532456580",
+      "https://www.linkedin.com/",
     ],
   };
 

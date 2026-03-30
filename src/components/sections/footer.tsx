@@ -43,10 +43,10 @@ export function Footer() {
             <div>
               <h4 className="mb-4 text-sm font-semibold">Suivez-Nous</h4>
               <div className="flex gap-3">
-                <a href="https://www.facebook.com/profile.php?id=61586028021180" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-border bg-card transition-all hover:border-transparent hover:bg-blue-600 hover:text-white">
+                <a href="https://www.facebook.com/profile.php?id=61577532456580" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-border bg-card transition-all hover:border-transparent hover:bg-blue-600 hover:text-white">
                   <Facebook className="h-5 w-5" />
                 </a>
-                <a href="https://www.linkedin.com/company/absolute-sarl/" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-border bg-card transition-all hover:border-transparent hover:bg-blue-700 hover:text-white">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-border bg-card transition-all hover:border-transparent hover:bg-blue-700 hover:text-white">
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a href="#" className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-border bg-card transition-all hover:border-transparent hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-600 hover:text-white">

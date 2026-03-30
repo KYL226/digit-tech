@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { useForm, useWatch } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -47,9 +48,33 @@ export function ContactPage() {
     defaultValue: "",
   });
 
-  const onSubmit = async () => {
-    alert("Message envoyé avec succès ! Nous vous recontacterons bientôt.");
-    reset();
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  const onSubmit = async (values: ContactFormValues) => {
+    setSubmitError(null);
+    setSubmitSuccess(false);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+
+      const data = (await res.json().catch(() => null)) as
+        | { ok?: boolean; error?: string }
+        | null;
+
+      if (!res.ok || !data?.ok) {
+        throw new Error(data?.error ?? "Erreur lors de l'envoi.");
+      }
+
+      setSubmitSuccess(true);
+      reset();
+    } catch (e) {
+      setSubmitError(e instanceof Error ? e.message : "Erreur lors de l'envoi.");
+    }
   };
 
   return (
@@ -90,8 +115,8 @@ export function ContactPage() {
                     <div className="rounded-lg bg-primary/10 p-3"><Mail className="h-6 w-6 text-primary" /></div>
                     <div className="space-y-2">
                       <h3 className="mb-1 font-semibold">Emails</h3>
-                      <a href="mailto:servicesclients@digittechgroup.com" className="block text-sm text-muted-foreground transition-colors hover:text-primary">
-                        servicesclients@digittechgroup.com
+                      <a href="mailto:digittechgroup@gmail.com" className="block text-sm text-muted-foreground transition-colors hover:text-primary">
+                        digittechgroup@gmail.com
                       </a>
                       <a href="mailto:kaboreyveslaurent00@gmail.com" className="block text-sm text-muted-foreground transition-colors hover:text-primary">
                         kaboreyveslaurent00@gmail.com
@@ -104,8 +129,8 @@ export function ContactPage() {
                     <div className="rounded-lg bg-primary/10 p-3"><Phone className="h-6 w-6 text-primary" /></div>
                     <div className="space-y-2">
                       <h3 className="mb-1 font-semibold">Téléphones</h3>
-                      <a href="tel:+22657431367" className="block text-sm text-muted-foreground transition-colors hover:text-primary">
-                        +226 57 43 13 67 <span className="text-xs">(Principal)</span>
+                      <a href="tel:+22677710804" className="block text-sm text-muted-foreground transition-colors hover:text-primary">
+                        +226 77 71 08 04 <span className="text-xs">(Principal)</span>
                       </a>
                       <a href="tel:+22603842281" className="block text-sm text-muted-foreground transition-colors hover:text-primary">
                         +226 03 84 22 81 <span className="text-xs">(Secondaire)</span>
@@ -142,6 +167,12 @@ export function ContactPage() {
 
               {/* Formulaire */}
               <div className="rounded-2xl border-2 border-border bg-card p-8 shadow-xl">
+                {submitError && <p className="mb-4 text-sm text-red-600">{submitError}</p>}
+                {submitSuccess && (
+                  <p className="mb-4 text-sm text-green-600">
+                    Message envoyé avec succès. Nous vous recontacterons bientôt.
+                  </p>
+                )}
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                   {/* Nom */}
                   <div className="grid gap-2">
